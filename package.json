@@ -1,0 +1,19 @@
+{
+  "name": "test_payco",
+  "version": "1.0.0",
+  "description": "test to work in payco",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alejoduque227/TestPayco.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "",
+    "mysql": "^2.13.0"
+  }
+}
