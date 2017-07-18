@@ -1,5 +1,4 @@
 const mysql = global.mysql
-const env = global.env
 
 
 function LoginController (req, res, next) {
