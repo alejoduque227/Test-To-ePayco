@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="page-title">
+        <div class="title_left">
+            <h3>Giphy Detail</h3>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <div class="col-md-12 ">
+        <div class="x_panel">
+            <div class="x_content">
+                <br>type: {{vm.giphy.type}}
+                <br>id: {{vm.giphy.id}}
+                <br>slug: {{vm.giphy.slug}}
+                <br>url: {{vm.giphy.url}}
+                <br>bitly_gif_url; {{vm.giphy.bitly_gif_url}}
+                <br>bitly_url: {{vm.giphy.bitly_url}}
+                <br>embed_url: {{vm.giphy.embed_url}}
+                <br>username: {{vm.giphy.username}}
+                <br>source_tld :{{vm.giphy.source_tld}}
+
+                <td align="center" data-title="'URL'" sortable="'url'"><img src="{{vm.giphy.images.fixed_height.url}}"></td>
+
+            </div>
+        </div>
+    </div>
+</div>

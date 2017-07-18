@@ -60,6 +60,12 @@
                 controllerAs: 'vm'
             })
 
+            .when('/profile/:id', {
+                controller: 'ProfileController',
+                templateUrl: 'home/profile.view.html',
+                controllerAs: 'vm'
+            })
+
             .otherwise({ redirectTo: '/login' });
     }
 

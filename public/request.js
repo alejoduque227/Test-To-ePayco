@@ -10,12 +10,15 @@
         var server = 'http://localhost:8000';
 
         service.getGiphy = getGiphy;
-
+        service.getGiphyById = getGiphyById;
 
         return service;
 
         function getGiphy() {
             return $http.get(server+'/giphy').then(handleSuccess, handleError('Error getting Data'));
+        }
+        function getGiphyById(id) {
+            return $http.get(server+'/giphy/'+id).then(handleSuccess, handleError('Error getting Data'));
         }
 
     // private functions
@@ -30,5 +33,7 @@
             };
         }
     }
+
+
 
 })();
