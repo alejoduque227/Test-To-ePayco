@@ -29,6 +29,8 @@ app.use(helmet.ieNoOpen());
 app.use(helmet.xssFilter());
 
 app.use(require('./Http/'));
+app.use(express.static(__dirname + '/public'));
+
 
 /**
  * Not route found handler.
@@ -71,7 +73,11 @@ const port = global.env.port;
 
 app.set('port', port);
 
-server.listen(port);
+app.listen(port);
+
+/*app.get('*', function(req, res) {
+    res.sendfile('./public/index.html');
+});*/
 
 server.on('error', () => {
 

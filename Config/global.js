@@ -7,6 +7,8 @@ global.mysql = require('./mysql')();
 global.sign = require('./sign');
 global.tokenVerify = require('./tokenVerify');
 global.AppError = require('../App/AppError');
+global.sign = require('./sign')
+
 
 global.http = {};
 global.http.codes = require('./http-codes');

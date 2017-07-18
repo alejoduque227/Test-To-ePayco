@@ -2,6 +2,7 @@ const mysql = global.mysql
 
 
 function LoginController (req, res, next) {
+    console.log("estaremos entrando aqui")
     let datos = req.body
     login(datos, function (error, user) {
         if(error){
@@ -16,7 +17,7 @@ function login(data, callback){
 
     mysql.findOrFail(query, function (error, result) {
         if (error){
-            callback(authIncorrect(), null);
+            return callback(authIncorrect(), null);
         }
         return callback(null,result)
     })
@@ -28,4 +29,3 @@ function login(data, callback){
 }
 
 module.exports = LoginController
-
